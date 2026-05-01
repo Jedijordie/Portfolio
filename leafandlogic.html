@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leaf & Logic — Jordan Mattis</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+  <!-- Nav -->
+  <nav class="flex justify-between items-center px-12 py-8">
+    <a href="index.html" class="text-xl font-semibold tracking-tight">Jordan Mattis</a>
+    <div class="flex gap-10 text-sm font-medium text-gray-500">
+      <a href="index.html#projects" class="hover:text-[#2D6A4F] transition-colors duration-200">Work</a>
+      <a href="about.html" class="hover:text-[#2D6A4F] transition-colors duration-200">About</a>
+      <a href="mailto:your@email.com" class="hover:text-[#2D6A4F] transition-colors duration-200">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="px-12 pt-12 pb-16 border-b border-gray-100">
+    <a href="index.html#projects" class="text-sm text-[#2D6A4F] hover:underline mb-6 inline-block">← Back to Projects</a>
+    <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-4">HTML · CSS · JavaScript · Raspberry Pi</p>
+    <h1 class="text-5xl font-bold mb-6 max-w-3xl">Leaf & Logic</h1>
+    <p class="text-gray-500 text-xl max-w-2xl leading-relaxed mb-10">
+      An eco-friendly smart greenhouse controller built on a Raspberry Pi, with a custom web dashboard to monitor and control sensors, lighting, irrigation, and musical plant stimulation in real time.
+    </p>
+    <div class="flex flex-wrap gap-6">
+      <a href="https://jedijordie.github.io/LeafandLogic/home.html" target="_blank" class="inline-block px-8 py-4 bg-[#2D6A4F] text-white text-sm font-medium rounded-full hover:bg-[#245a42] transition-colors duration-200">
+        Live Demo →
+      </a>
+      <a href="https://github.com/Jedijordie/LeafandLogic" target="_blank" class="inline-block px-8 py-4 border border-gray-300 text-sm font-medium rounded-full hover:border-[#2D6A4F] hover:text-[#2D6A4F] transition-colors duration-200">
+        GitHub Repo →
+      </a>
+    </div>
+  </section>
+
+  <!-- Hero Screenshot -->
+  <section class="px-12 py-16 bg-gray-50">
+    <img src="images/leafandlogic.png" alt="Leaf and Logic Dashboard" class="rounded-2xl w-full shadow-sm">
+  </section>
+
+  <!-- Project Details -->
+  <section class="px-12 py-16 border-b border-gray-100">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-5xl">
+      <div>
+        <p class="text-xs uppercase tracking-widest text-gray-400 mb-2">Role</p>
+        <p class="font-medium">Frontend Developer</p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-gray-400 mb-2">Timeline</p>
+        <p class="font-medium">Winter 2024</p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-gray-400 mb-2">Team</p>
+        <p class="font-medium">David A, Jordan M, Raj S</p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-gray-400 mb-2">Status</p>
+        <p class="font-medium text-gray-400">Decommissioned</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section class="px-12 py-16 border-b border-gray-100">
+    <div class="max-w-3xl">
+      <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-4">The Problem</p>
+      <h2 class="text-3xl font-bold mb-6">Plant care is easy to forget and hard to automate affordably</h2>
+      <p class="text-gray-600 leading-relaxed mb-4">
+        Busy people struggle to maintain consistent plant care routines. Commercial smart greenhouse solutions are expensive, closed-source, and not customizable. Our team wanted to build something affordable, open, and genuinely educational.
+      </p>
+      <p class="text-gray-600 leading-relaxed">
+        The challenge was connecting physical hardware sensors to a web interface that could display real-time data and allow manual control, all running on a Raspberry Pi with a minimal budget.
+      </p>
+    </div>
+  </section>
+
+  <!-- Solution -->
+  <section class="px-12 py-16 border-b border-gray-100">
+    <div class="max-w-3xl">
+      <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-4">The Solution</p>
+      <h2 class="text-3xl font-bold mb-6">A physical greenhouse with a custom web dashboard</h2>
+      <p class="text-gray-600 leading-relaxed mb-8">
+        We built a PVC pipe greenhouse frame with real plants, connected to a Raspberry Pi controlling soil moisture sensors, temperature sensors, a water pump, LED grow lights, a fan, and speakers for musical plant stimulation. I designed and built the entire frontend dashboard to visualize sensor data and control devices.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-gray-50 rounded-2xl p-6">
+          <h3 class="font-semibold mb-2">Sensor Dashboard</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Real-time display of moisture levels, temperature, and status of all connected devices including fan, pump, lights and speakers.</p>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-6">
+          <h3 class="font-semibold mb-2">Device Control</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Manual on/off controls for each device directly from the browser, with volume control for the speaker system.</p>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-6">
+          <h3 class="font-semibold mb-2">Plant Care Guide</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Detailed care instructions for 10 houseplant species including optimal temperature, soil moisture, LED patterns and musical stimulation frequencies.</p>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-6">
+          <h3 class="font-semibold mb-2">Responsive Design</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Fully responsive layout with mobile dropdown navigation, working across desktop and mobile screens.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section class="px-12 py-16 border-b border-gray-100">
+    <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-12">Dashboard Screenshots</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <img src="images/leafandlogic/home.png" alt="Home Dashboard" class="rounded-2xl w-full shadow-sm mb-3">
+        <p class="text-sm text-gray-500">Home dashboard - sensor readings at a glance</p>
+      </div>
+      <div>
+        <img src="images/leafandlogic/devices.png" alt="Device Controls" class="rounded-2xl w-full shadow-sm mb-3">
+        <p class="text-sm text-gray-500">Device control panel - manual on/off for all hardware</p>
+      </div>
+      <div>
+        <img src="images/leafandlogic/features.png" alt="Product Features" class="rounded-2xl w-full shadow-sm mb-3">
+        <p class="text-sm text-gray-500">Product features - system capabilities explained</p>
+      </div>
+      <div>
+        <img src="images/leafandlogic/plantinfo.png" alt="Plant Care" class="rounded-2xl w-full shadow-sm mb-3">
+        <p class="text-sm text-gray-500">Plant care guide - species-specific recommendations</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Physical Build Photos -->
+  <section class="px-12 py-16 border-b border-gray-100">
+    <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-12">The Physical Build</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <img src="images/leafandlogic/ghfull.jpg" alt="Greenhouse build" class="rounded-2xl w-full h-64 object-cover shadow-sm">
+      <img src="images/leafandlogic/ghcover.jpg" alt="Greenhouse with cover" class="rounded-2xl w-full h-64 object-cover shadow-sm">
+      <img src="images/leafandlogic/raspberrypi.jpg" alt="Raspberry Pi hardware" class="rounded-2xl w-full h-64 object-cover shadow-sm">
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section class="px-12 py-16 border-b border-gray-100">
+    <div class="max-w-3xl">
+      <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-8">Tech Stack</p>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">HTML5</div>
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">Tailwind CSS</div>
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">JavaScript</div>
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">jQuery</div>
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">Raspberry Pi</div>
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">Python</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Documentation -->
+  <section class="px-12 py-16 border-b border-gray-100">
+    <div class="max-w-3xl">
+      <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-4">Documentation</p>
+      <h2 class="text-3xl font-bold mb-8">Project documents</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="https://github.com/Jedijordie/LeafandLogic/blob/main/documentation/Project%20Idea.pdf" target="_blank" class="flex items-center gap-3 bg-gray-50 rounded-xl px-4 py-3 hover:border hover:border-[#2D6A4F] transition-colors duration-200">
+          <span class="text-[#2D6A4F]">→</span>
+          <span class="text-sm font-medium">Project Idea</span>
+        </a>
+        <a href="https://github.com/Jedijordie/LeafandLogic/blob/main/documentation/Project%20Scope..pdf" target="_blank" class="flex items-center gap-3 bg-gray-50 rounded-xl px-4 py-3 hover:border hover:border-[#2D6A4F] transition-colors duration-200">
+          <span class="text-[#2D6A4F]">→</span>
+          <span class="text-sm font-medium">Project Scope</span>
+        </a>
+        <a href="https://github.com/Jedijordie/LeafandLogic/blob/main/documentation/Project_Plannings.pdf" target="_blank" class="flex items-center gap-3 bg-gray-50 rounded-xl px-4 py-3 hover:border hover:border-[#2D6A4F] transition-colors duration-200">
+          <span class="text-[#2D6A4F]">→</span>
+          <span class="text-sm font-medium">Project Planning & User Stories</span>
+        </a>
+        <a href="https://github.com/Jedijordie/LeafandLogic/blob/main/documentation/Presentation%20164.pptx" target="_blank" class="flex items-center gap-3 bg-gray-50 rounded-xl px-4 py-3 hover:border hover:border-[#2D6A4F] transition-colors duration-200">
+          <span class="text-[#2D6A4F]">→</span>
+          <span class="text-sm font-medium">Project Presentation</span>
+        </a>
+        <a href="https://github.com/Jedijordie/LeafandLogic/blob/main/documentation/Project1.mpp" target="_blank" class="flex items-center gap-3 bg-gray-50 rounded-xl px-4 py-3 hover:border hover:border-[#2D6A4F] transition-colors duration-200">
+          <span class="text-[#2D6A4F]">→</span>
+          <span class="text-sm font-medium">Project Schedule (MS Project)</span>
+        </a>
+        <a href="https://github.com/Jedijordie/LeafandLogic/blob/main/documentation/Plant%20Research%20Findings.pdf" target="_blank" class="flex items-center gap-3 bg-gray-50 rounded-xl px-4 py-3 hover:border hover:border-[#2D6A4F] transition-colors duration-200">
+          <span class="text-[#2D6A4F]">→</span>
+          <span class="text-sm font-medium">Plant Research Findings</span>
+        </a>
+        <a href="https://github.com/Jedijordie/LeafandLogic/blob/main/documentation/Plant%20Environment%20Specifications.pdf" target="_blank" class="flex items-center gap-3 bg-gray-50 rounded-xl px-4 py-3 hover:border hover:border-[#2D6A4F] transition-colors duration-200">
+          <span class="text-[#2D6A4F]">→</span>
+          <span class="text-sm font-medium">Plant Environment Specifications</span>
+        </a>
+        <a href="https://github.com/Jedijordie/LeafandLogic/tree/main/documentation" target="_blank" class="flex items-center gap-3 bg-[#2D6A4F] rounded-xl px-4 py-3 hover:bg-[#245a42] transition-colors duration-200">
+          <span class="text-white">→</span>
+          <span class="text-sm font-medium text-white">View All on GitHub</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reflection -->
+  <section class="px-12 py-16 border-b border-gray-100">
+    <div class="max-w-3xl">
+      <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-4">Reflection</p>
+      <h2 class="text-3xl font-bold mb-6">What I learned</h2>
+      <p class="text-gray-600 leading-relaxed mb-4">
+        This was my first experience bridging physical hardware with a web interface. Working with real sensors and real plants made the feedback loop immediate and tangible in a way that purely software projects don't. When the pump didn't trigger correctly, you could see the soil getting dry.
+      </p>
+      <p class="text-gray-600 leading-relaxed">
+        My role was exclusively frontend, which gave me deep experience designing a dashboard UI that had to communicate real-time state clearly and simply. I would have loved to add live data updates using WebSockets rather than static values, and a historical data chart to track sensor trends over time.
+      </p>
+    </div>
+  </section>
+
+  <!-- Next Project -->
+  <section class="px-12 py-16">
+    <p class="text-sm text-gray-400 mb-4">Next Project</p>
+    <a href="jphandy.html" class="text-3xl font-bold hover:text-[#2D6A4F] transition-colors duration-200">JP Handy →</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="px-12 py-12 border-t border-gray-100 flex justify-between items-center">
+    <p class="text-sm text-gray-400">© 2026 Jordan Mattis</p>
+    <div class="flex gap-8 text-sm text-gray-400">
+      <a href="https://github.com/Jedijordie" target="_blank" class="hover:text-[#2D6A4F] transition-colors duration-200">GitHub</a>
+      <a href="https://www.linkedin.com/in/jordie-mattis/" target="_blank" class="hover:text-[#2D6A4F] transition-colors duration-200">LinkedIn</a>
+      <a href="mailto:your@email.com" class="hover:text-[#2D6A4F] transition-colors duration-200">jordanmattis@hotmail.com</a>
+    </div>
+  </footer>
+
+</body>
+</html>

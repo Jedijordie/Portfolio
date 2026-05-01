@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CreativeSwap Mobile — Jordan Mattis</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+  <!-- Nav -->
+  <nav class="flex justify-between items-center px-12 py-8">
+    <a href="index.html" class="text-xl font-semibold tracking-tight">Jordan Mattis</a>
+    <div class="flex gap-10 text-sm font-medium text-gray-500">
+      <a href="index.html#projects" class="hover:text-[#2D6A4F] transition-colors duration-200">Work</a>
+      <a href="about.html" class="hover:text-[#2D6A4F] transition-colors duration-200">About</a>
+      <a href="mailto:jordanmattis@hotmail.com" class="hover:text-[#2D6A4F] transition-colors duration-200">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="px-12 pt-12 pb-16 border-b border-gray-100">
+    <a href="index.html#projects" class="text-sm text-[#2D6A4F] hover:underline mb-6 inline-block">← Back to Projects</a>
+    <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-4">React Native · Firebase · Expo</p>
+    <h1 class="text-5xl font-bold mb-6 max-w-3xl">CreativeSwap Mobile</h1>
+    <p class="text-gray-500 text-xl max-w-2xl leading-relaxed mb-10">
+      A cross-platform iOS and Android companion app for the CreativeSwap web platform. Built with React Native and Expo, it lets artists photograph their work and post trade listings directly from their phones.
+    </p>
+    <div class="flex flex-wrap gap-6">
+      <a href="https://github.com/Jedijordie/CreativeSwapMobile" target="_blank" class="inline-block px-8 py-4 bg-[#2D6A4F] text-white text-sm font-medium rounded-full hover:bg-[#245a42] transition-colors duration-200">
+        GitHub Repo →
+      </a>
+      <a href="https://www.figma.com/design/UGlLszWobOBdplwoZZGVPB/Untitled?node-id=0-1&t=lRvvKXfVKAmofIaZ-1" target="_blank" class="inline-block px-8 py-4 border border-gray-300 text-sm font-medium rounded-full hover:border-[#2D6A4F] hover:text-[#2D6A4F] transition-colors duration-200">
+        Figma Designs →
+      </a>
+      <a href="creativeswap.html" class="inline-block px-8 py-4 border border-gray-300 text-sm font-medium rounded-full hover:border-[#2D6A4F] hover:text-[#2D6A4F] transition-colors duration-200">
+        View Web App →
+      </a>
+    </div>
+  </section>
+
+  <!-- Project Details -->
+  <section class="px-12 py-16 border-b border-gray-100">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-5xl">
+      <div>
+        <p class="text-xs uppercase tracking-widest text-gray-400 mb-2">Role</p>
+        <p class="font-medium">Solo Developer</p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-gray-400 mb-2">Timeline</p>
+        <p class="font-medium">4 Weeks</p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-gray-400 mb-2">Course</p>
+        <p class="font-medium">ITAS274 — Mobile Dev</p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-gray-400 mb-2">Platform</p>
+        <p class="font-medium text-[#2D6A4F]">iOS & Android</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section class="px-12 py-16 border-b border-gray-100">
+    <div class="max-w-3xl">
+      <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-4">The Problem</p>
+      <h2 class="text-3xl font-bold mb-6">Artists work on the go - the web app wasn't enough</h2>
+      <p class="text-gray-600 leading-relaxed mb-4">
+        The CreativeSwap web platform works well at a desktop but artists are often at markets, studios, and events when they want to post a new listing. Pulling out a laptop to photograph and upload work isn't realistic in those situations.
+      </p>
+      <p class="text-gray-600 leading-relaxed">
+        The mobile companion app was built to solve exactly that - a fast, photo-first experience that lets artists post trade listings directly from their phone in seconds, with GPS-based distance filtering already built in.
+      </p>
+    </div>
+  </section>
+
+  <!-- Solution -->
+  <section class="px-12 py-16 border-b border-gray-100">
+    <div class="max-w-3xl">
+      <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-4">The Solution</p>
+      <h2 class="text-3xl font-bold mb-6">A photo-first mobile experience sharing the same Firebase backend</h2>
+      <p class="text-gray-600 leading-relaxed mb-8">
+        Rather than rebuilding a separate backend, the mobile app connects directly to the same Firebase project as the web platform - same authentication, same Firestore database, same Cloud Storage. This means listings created on mobile appear instantly on the web app and vice versa.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-gray-50 rounded-2xl p-6">
+          <h3 class="font-semibold mb-2">Photo-First Listings</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Upload photos directly from the device gallery, preview and remove images before posting, and submit listings straight to Firebase Storage.</p>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-6">
+          <h3 class="font-semibold mb-2">GPS Distance Filtering</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Listings are filtered to a 50km radius using coordinates stored in the user's Firebase profile, with distance displayed on every listing card.</p>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-6">
+          <h3 class="font-semibold mb-2">Saved Listings</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Users can bookmark listings while browsing and access them later from a dedicated Saved screen. Bookmarks persist between sessions using AsyncStorage.</p>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-6">
+          <h3 class="font-semibold mb-2">Full Listing Management</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Create, edit, and delete listings from mobile. Edit screen pre-populates existing data and supports adding or removing individual photos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section class="px-12 py-16 border-b border-gray-100">
+    <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-12">App Screenshots</p>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+      <div>
+        <img src="images/creativeswapmobile/login.jpg" alt="Login" class="rounded-2xl w-full shadow-sm mb-3">
+        <p class="text-sm text-gray-500">Login screen</p>
+      </div>
+      <div>
+        <img src="images/creativeswapmobile/browselistings.jpg" alt="Browse Listings" class="rounded-2xl w-full shadow-sm mb-3">
+        <p class="text-sm text-gray-500">Browse listings with distance</p>
+      </div>
+      <div>
+        <img src="images/creativeswapmobile/createlisting.jpg" alt="Create Listing" class="rounded-2xl w-full shadow-sm mb-3">
+        <p class="text-sm text-gray-500">Create a new listing</p>
+      </div>
+      <div>
+        <img src="images/creativeswapmobile/editlisting.jpg" alt="Edit Listing" class="rounded-2xl w-full shadow-sm mb-3">
+        <p class="text-sm text-gray-500">Edit existing listing</p>
+      </div>
+      <div>
+        <img src="images/creativeswapmobile/yourlistings.jpg" alt="Your Listings" class="rounded-2xl w-full shadow-sm mb-3">
+        <p class="text-sm text-gray-500">Your listings management</p>
+      </div>
+      <div>
+        <img src="images/creativeswapmobile/savedlistings.jpg" alt="Saved Listings" class="rounded-2xl w-full shadow-sm mb-3">
+        <p class="text-sm text-gray-500">Saved listings via AsyncStorage</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section class="px-12 py-16 border-b border-gray-100">
+    <div class="max-w-3xl">
+      <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-8">Tech Stack</p>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">React Native</div>
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">Expo</div>
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">Firebase Auth</div>
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">Firestore</div>
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">Cloud Storage</div>
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">AsyncStorage</div>
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">Expo ImagePicker</div>
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">GPS Location</div>
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">Figma</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reflection -->
+  <section class="px-12 py-16 border-b border-gray-100">
+    <div class="max-w-3xl">
+      <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-4">Reflection</p>
+      <h2 class="text-3xl font-bold mb-6">What I learned building for mobile</h2>
+      <p class="text-gray-600 leading-relaxed mb-4">
+        Mobile development introduced challenges that don't exist in web development - device permissions, keyboard behavior differences between iOS and Android, and image upload workflows that have to account for the device's file system rather than a browser.
+      </p>
+      <p class="text-gray-600 leading-relaxed mb-4">
+        The keyboard behavior on Android was a real challenge - form inputs were getting hidden behind the keyboard. The fix required both KeyboardAwareScrollView in the component and softwareKeyboardLayoutMode configured in app.json. Small config details like that can cost hours without knowing what to look for.
+      </p>
+      <p class="text-gray-600 leading-relaxed">
+        Sharing the Firebase backend with the web app was one of the best architectural decisions - it meant I could focus entirely on the mobile experience rather than rebuilding data logic that already existed. In a real product this would be the right approach for any companion app.
+      </p>
+    </div>
+  </section>
+
+  <!-- Next Project -->
+  <section class="px-12 py-16">
+    <p class="text-sm text-gray-400 mb-4">Related Project</p>
+    <a href="creativeswap.html" class="text-3xl font-bold hover:text-[#2D6A4F] transition-colors duration-200">CreativeSwap Web →</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="px-12 py-12 border-t border-gray-100 flex justify-between items-center">
+    <p class="text-sm text-gray-400">© 2026 Jordan Mattis</p>
+    <div class="flex gap-8 text-sm text-gray-400">
+      <a href="https://github.com/Jedijordie" target="_blank" class="hover:text-[#2D6A4F] transition-colors duration-200">GitHub</a>
+      <a href="https://www.linkedin.com/in/jordie-mattis/" target="_blank" class="hover:text-[#2D6A4F] transition-colors duration-200">LinkedIn</a>
+      <a href="mailto:jordanmattis@hotmail.com" class="hover:text-[#2D6A4F] transition-colors duration-200">Email</a>
+    </div>
+  </footer>
+
+</body>
+</html>

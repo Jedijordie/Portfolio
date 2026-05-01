@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CreativeSwap — Jordan Mattis</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+  <!-- Nav -->
+  <nav class="flex justify-between items-center px-12 py-8">
+    <a href="index.html" class="text-xl font-semibold tracking-tight">Jordan Mattis</a>
+    <div class="flex gap-10 text-sm font-medium text-gray-500">
+      <a href="index.html#projects" class="hover:text-[#2D6A4F] transition-colors duration-200">Work</a>
+      <a href="about.html" class="hover:text-[#2D6A4F] transition-colors duration-200">About</a>
+      <a href="mailto:your@email.com" class="hover:text-[#2D6A4F] transition-colors duration-200">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="px-12 pt-12 pb-16 border-b border-gray-100">
+    <a href="index.html#projects" class="text-sm text-[#2D6A4F] hover:underline mb-6 inline-block">← Back to Projects</a>
+    <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-4">React · Firebase · Full Stack</p>
+    <h1 class="text-5xl font-bold mb-6 max-w-3xl">CreativeSwap</h1>
+    <p class="text-gray-500 text-xl max-w-2xl leading-relaxed mb-10">
+      A local artist trading platform connecting creatives within 50km to trade artwork, crafts, and services — no money involved, just creativity.
+    </p>
+    <div class="flex flex-wrap gap-6">
+      <a href="https://appdev.itas.ca:5192" target="_blank" class="inline-block px-8 py-4 bg-[#2D6A4F] text-white text-sm font-medium rounded-full hover:bg-[#245a42] transition-colors duration-200">
+        Live Demo →
+      </a>
+      <a href="https://github.com/Jedijordie/ITAS282_jmattis_finalproject" target="_blank" class="inline-block px-8 py-4 border border-gray-300 text-sm font-medium rounded-full hover:border-[#2D6A4F] hover:text-[#2D6A4F] transition-colors duration-200">
+        GitHub Repo →
+      </a>
+      <a href="https://github.com/users/Jedijordie/projects/12" target="_blank" class="inline-block px-8 py-4 border border-gray-300 text-sm font-medium rounded-full hover:border-[#2D6A4F] hover:text-[#2D6A4F] transition-colors duration-200">
+        Kanban Board →
+      </a>
+      <a href="https://github.com/Jedijordie/CreativeSwapMobile" target="_blank" class="inline-block px-8 py-4 border border-gray-300 text-sm font-medium rounded-full hover:border-[#2D6A4F] hover:text-[#2D6A4F] transition-colors duration-200">
+        Mobile App →
+      </a>
+    </div>
+  </section>
+
+  <!-- Hero Screenshot -->
+  <section class="px-12 py-16 bg-gray-50">
+    <img src="images/creativeswap.png" alt="CreativeSwap Homepage" class="rounded-2xl w-full shadow-sm">
+  </section>
+
+  <!-- Project Details -->
+  <section class="px-12 py-16 border-b border-gray-100">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-5xl">
+      <div>
+        <p class="text-xs uppercase tracking-widest text-gray-400 mb-2">Role</p>
+        <p class="font-medium">Solo Developer</p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-gray-400 mb-2">Timeline</p>
+        <p class="font-medium">13 Weeks (Jan–Apr 2026)</p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-gray-400 mb-2">Course</p>
+        <p class="font-medium">ITAS 282 — Final Project</p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-gray-400 mb-2">Status</p>
+        <p class="font-medium text-[#2D6A4F]">MVP Complete</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section class="px-12 py-16 border-b border-gray-100">
+    <div class="max-w-3xl">
+      <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-4">The Problem</p>
+      <h2 class="text-3xl font-bold mb-6">Artists want to trade, but have no structured way to do it</h2>
+      <p class="text-gray-600 leading-relaxed mb-4">
+        Artists and creatives frequently want to exchange their work and services instead of paying cash — but currently rely on informal text messages and social media DMs, limited to people they already know. There's no centralized platform for local artists to discover trading opportunities, vet partners, or safely coordinate exchanges.
+      </p>
+      <p class="text-gray-600 leading-relaxed">
+        This creates a trust problem: how do you trade with a stranger safely? And a discovery problem: how do you even find someone nearby who wants what you have?
+      </p>
+    </div>
+  </section>
+
+  <!-- Solution -->
+  <section class="px-12 py-16 border-b border-gray-100">
+    <div class="max-w-3xl">
+      <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-4">The Solution</p>
+      <h2 class="text-3xl font-bold mb-6">A structured trading platform built around safety and community</h2>
+      <p class="text-gray-600 leading-relaxed mb-8">
+        CreativeSwap provides a full offer/accept/decline workflow, phone verification to prevent ban evasion, smart filtering by distance and creative medium, and real-time messaging that unlocks only after an offer is accepted. Safety features include public meeting warnings, a strike system, and a three-way trade capability for circular exchanges.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-gray-50 rounded-2xl p-6">
+          <h3 class="font-semibold mb-2">Trading System</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Offer, counter-offer, accept or decline workflow. Three-way trades for circular exchanges. Real-time messaging unlocked after acceptance.</p>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-6">
+          <h3 class="font-semibold mb-2">Safety & Accountability</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Phone verification on signup. Strike system with permanent bans. Report system with admin moderation dashboard.</p>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-6">
+          <h3 class="font-semibold mb-2">Smart Discovery</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Filter listings by distance within 50km, creative medium, and what you're looking for in return.</p>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-6">
+          <h3 class="font-semibold mb-2">CI/CD Pipeline</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">GitHub Actions pipeline with lint, test, security scan, BDD, UI, UAT, build and deploy stages running automatically.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section class="px-12 py-16 border-b border-gray-100">
+    <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-12">App Screenshots</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <img src="images/creativeswap/browselistings.png" alt="Browse Listings" class="rounded-2xl w-full shadow-sm mb-3">
+        <p class="text-sm text-gray-500">Browse Listings — filter by distance and medium</p>
+      </div>
+      <div>
+        <img src="images/creativeswap/messaging.png" alt="Messaging" class="rounded-2xl w-full shadow-sm mb-3">
+        <p class="text-sm text-gray-500">Real-time messaging — unlocks after accepted offer</p>
+      </div>
+      <div>
+        <img src="images/creativeswap/incomingoffers.png" alt="Incoming Offers" class="rounded-2xl w-full shadow-sm mb-3">
+        <p class="text-sm text-gray-500">Incoming offers — accept, decline or counter</p>
+      </div>
+      <div>
+        <img src="images/creativeswap/admin.png" alt="Admin Dashboard" class="rounded-2xl w-full shadow-sm mb-3">
+        <p class="text-sm text-gray-500">Admin dashboard — moderation and strike management</p>
+      </div>
+      <div>
+        <img src="images/creativeswap/profile.png" alt="Profile" class="rounded-2xl w-full shadow-sm mb-3">
+        <p class="text-sm text-gray-500">Artist profile — portfolio gallery and trade history</p>
+      </div>
+      <div>
+        <img src="images/creativeswap/myoffers.png" alt="My Offers" class="rounded-2xl w-full shadow-sm mb-3">
+        <p class="text-sm text-gray-500">My offers — track all active and pending trades</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section class="px-12 py-16 border-b border-gray-100">
+    <div class="max-w-3xl">
+      <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-8">Tech Stack</p>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">React 18.3.1</div>
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">Firebase Auth</div>
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">Firestore</div>
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">Tailwind CSS</div>
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">Google Maps API</div>
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">EmailJS</div>
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">Jest & RTL</div>
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">Playwright</div>
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">Docker & Nginx</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Known Limitations -->
+  <section class="px-12 py-16 border-b border-gray-100">
+    <div class="max-w-3xl">
+      <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-4">Known Limitations & Reflections</p>
+      <h2 class="text-3xl font-bold mb-6">What I'd do differently</h2>
+      <p class="text-gray-600 leading-relaxed mb-6">
+        Several architectural decisions made during early development created limitations that would require significant refactoring to resolve. The three-way trade system, while functional, lacks a structured data model to track which specific listings each participant is trading — meaning listing cleanup after completion is manual.
+      </p>
+      <p class="text-gray-600 leading-relaxed mb-6">
+        The trades completed counter was hidden due to a race condition where multiple clients fire the increment simultaneously — the correct fix requires a Firestore Cloud Function, which was outside the project scope.
+      </p>
+      <p class="text-gray-600 leading-relaxed">
+        These limitations were documented transparently and deprioritized in favour of delivering a stable, functional MVP. Given more time, I would implement Cloud Functions for server-side logic and redesign the three-way trade data model from the start.
+      </p>
+    </div>
+  </section>
+
+  <!-- Next Project -->
+  <section class="px-12 py-16">
+    <p class="text-sm text-gray-400 mb-4">Next Project</p>
+    <a href="leafandlogic.html" class="text-3xl font-bold hover:text-[#2D6A4F] transition-colors duration-200">Leaf & Logic →</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="px-12 py-12 border-t border-gray-100 flex justify-between items-center">
+    <p class="text-sm text-gray-400">© 2026 Jordan Mattis</p>
+    <div class="flex gap-8 text-sm text-gray-400">
+      <a href="https://github.com/Jedijordie" target="_blank" class="hover:text-[#2D6A4F] transition-colors duration-200">GitHub</a>
+      <a href="https://www.linkedin.com/in/jordie-mattis/" target="_blank" class="hover:text-[#2D6A4F] transition-colors duration-200">LinkedIn</a>
+      <a href="mailto:your@email.com" class="hover:text-[#2D6A4F] transition-colors duration-200">jordanmattis@hotmail.com</a>
+    </div>
+  </footer>
+
+</body>
+</html>
