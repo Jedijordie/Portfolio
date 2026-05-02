@@ -9,9 +9,9 @@
 <body class="bg-white text-gray-900 font-sans">
 
   <!-- Nav -->
-  <nav class="flex justify-between items-center px-12 py-8">
+  <nav class="flex justify-between items-center px-6 md:px-12 py-8">
     <a href="index.html" class="text-xl font-semibold tracking-tight">Jordan Mattis</a>
-    <div class="flex gap-10 text-sm font-medium text-gray-500">
+    <div class="hidden md:flex gap-10 text-sm font-medium text-gray-500">
       <a href="index.html" class="hover:text-[#2D6A4F] transition-colors duration-200">Home</a>
       <div class="relative group">
         <button class="hover:text-[#2D6A4F] transition-colors duration-200 flex items-center gap-1">
@@ -31,10 +31,26 @@
       <a href="JordanMattis_Resume.pdf" target="_blank" class="hover:text-[#2D6A4F] transition-colors duration-200">Resume</a>
       <a href="mailto:your@email.com" class="hover:text-[#2D6A4F] transition-colors duration-200">Contact</a>
     </div>
+    <button id="mobile-menu-btn" class="md:hidden text-gray-500 hover:text-[#2D6A4F]">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
   </nav>
+  <div id="mobile-menu" class="hidden md:hidden px-6 pb-6 flex flex-col gap-4 text-sm font-medium text-gray-500 border-b border-gray-100">
+    <a href="index.html" class="hover:text-[#2D6A4F]">Home</a>
+    <a href="about.html" class="hover:text-[#2D6A4F]">About</a>
+    <a href="JordanMattis_Resume.pdf" target="_blank" class="hover:text-[#2D6A4F]">Resume</a>
+    <a href="mailto:your@email.com" class="hover:text-[#2D6A4F]">Contact</a>
+  </div>
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
 
   <!-- Hero -->
-  <section class="px-12 pt-12 pb-16 border-b border-gray-100">
+  <section class="px-6 md:px-12 pt-12 pb-16 border-b border-gray-100">
     <a href="index.html#projects" class="text-sm text-[#2D6A4F] hover:underline mb-6 inline-block">← Back to Projects</a>
     <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-4">WordPress · SEO · Client Work</p>
     <h1 class="text-5xl font-bold mb-6 max-w-3xl">JP Handy</h1>
@@ -49,12 +65,12 @@
   </section>
 
   <!-- Hero Screenshot -->
-  <section class="px-12 py-16 bg-gray-50">
+  <section class="px-6 md:px-12 py-16 bg-gray-50">
     <img src="images/jphandy.png" alt="JP Handy Homepage" class="rounded-2xl w-full shadow-sm">
   </section>
 
   <!-- Project Details -->
-  <section class="px-12 py-16 border-b border-gray-100">
+  <section class="px-6 md:px-12 py-16 border-b border-gray-100">
     <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-5xl">
       <div>
         <p class="text-xs uppercase tracking-widest text-gray-400 mb-2">Role</p>
@@ -76,7 +92,7 @@
   </section>
 
   <!-- Problem -->
-  <section class="px-12 py-16 border-b border-gray-100">
+  <section class="px-6 md:px-12 py-16 border-b border-gray-100">
     <div class="max-w-3xl">
       <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-4">The Problem</p>
       <h2 class="text-3xl font-bold mb-6">A skilled tradesperson with no online presence</h2>
@@ -90,7 +106,7 @@
   </section>
 
   <!-- Solution -->
-  <section class="px-12 py-16 border-b border-gray-100">
+  <section class="px-6 md:px-12 py-16 border-b border-gray-100">
     <div class="max-w-3xl">
       <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-4">The Solution</p>
       <h2 class="text-3xl font-bold mb-6">A full business website built for real-world use</h2>
@@ -119,7 +135,7 @@
   </section>
 
   <!-- Screenshots -->
-  <section class="px-12 py-16 border-b border-gray-100">
+  <section class="px-6 md:px-12 py-16 border-b border-gray-100">
     <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-12">Site Screenshots</p>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div>
@@ -142,7 +158,7 @@
   </section>
 
   <!-- Documentation -->
-  <section class="px-12 py-16 border-b border-gray-100">
+  <section class="px-6 md:px-12 py-16 border-b border-gray-100">
     <div class="max-w-3xl">
       <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-4">Documentation</p>
       <h2 class="text-3xl font-bold mb-8">Project documents</h2>
@@ -188,42 +204,42 @@
   </section>
 
   <!-- Meeting Minutes -->
-<section class="px-12 py-16 border-b border-gray-100">
-  <div class="max-w-3xl">
-    <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-4">Client Communication</p>
-    <h2 class="text-3xl font-bold mb-4">Meeting minutes</h2>
-    <p class="text-gray-600 leading-relaxed mb-8">All client meetings were documented throughout the project, demonstrating professional communication and project coordination with a real client.</p>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <a href="https://github.com/Jedijordie/JP-Handy/blob/main/Meeting%20Minutes/Initial%20Meeting_May%201%2C%202024.pdf" target="_blank" class="flex items-center gap-3 bg-gray-50 rounded-xl px-4 py-3 hover:border hover:border-[#2D6A4F] transition-colors duration-200">
-        <span class="text-[#2D6A4F]">→</span>
-        <span class="text-sm font-medium">Initial Meeting — May 1, 2024</span>
-      </a>
-      <a href="https://github.com/Jedijordie/JP-Handy/blob/main/Meeting%20Minutes/Meeting%20May%207%2C%202024" target="_blank" class="flex items-center gap-3 bg-gray-50 rounded-xl px-4 py-3 hover:border hover:border-[#2D6A4F] transition-colors duration-200">
-        <span class="text-[#2D6A4F]">→</span>
-        <span class="text-sm font-medium">Meeting — May 7, 2024</span>
-      </a>
-      <a href="https://github.com/Jedijordie/JP-Handy/blob/main/Meeting%20Minutes/Meeting%20May%2013%2C%202024" target="_blank" class="flex items-center gap-3 bg-gray-50 rounded-xl px-4 py-3 hover:border hover:border-[#2D6A4F] transition-colors duration-200">
-        <span class="text-[#2D6A4F]">→</span>
-        <span class="text-sm font-medium">Meeting — May 13, 2024</span>
-      </a>
-      <a href="https://github.com/Jedijordie/JP-Handy/blob/main/Meeting%20Minutes/Meeting%20May%2022%2C%202024" target="_blank" class="flex items-center gap-3 bg-gray-50 rounded-xl px-4 py-3 hover:border hover:border-[#2D6A4F] transition-colors duration-200">
-        <span class="text-[#2D6A4F]">→</span>
-        <span class="text-sm font-medium">Meeting — May 22, 2024</span>
-      </a>
-      <a href="https://github.com/Jedijordie/JP-Handy/blob/main/Meeting%20Minutes/Meeting%20May%2028%2C%202024" target="_blank" class="flex items-center gap-3 bg-gray-50 rounded-xl px-4 py-3 hover:border hover:border-[#2D6A4F] transition-colors duration-200">
-        <span class="text-[#2D6A4F]">→</span>
-        <span class="text-sm font-medium">Meeting — May 28, 2024</span>
-      </a>
-      <a href="https://github.com/Jedijordie/JP-Handy/blob/main/Meeting%20Minutes/Neils%20To%20Do%20List_May%201%2C%202024_1.pdf" target="_blank" class="flex items-center gap-3 bg-gray-50 rounded-xl px-4 py-3 hover:border hover:border-[#2D6A4F] transition-colors duration-200">
-        <span class="text-[#2D6A4F]">→</span>
-        <span class="text-sm font-medium">Client To-Do List</span>
-      </a>
+  <section class="px-6 md:px-12 py-16 border-b border-gray-100">
+    <div class="max-w-3xl">
+      <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-4">Client Communication</p>
+      <h2 class="text-3xl font-bold mb-4">Meeting minutes</h2>
+      <p class="text-gray-600 leading-relaxed mb-8">All client meetings were documented throughout the project, demonstrating professional communication and project coordination with a real client.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="https://github.com/Jedijordie/JP-Handy/blob/main/Meeting%20Minutes/Initial%20Meeting_May%201%2C%202024.pdf" target="_blank" class="flex items-center gap-3 bg-gray-50 rounded-xl px-4 py-3 hover:border hover:border-[#2D6A4F] transition-colors duration-200">
+          <span class="text-[#2D6A4F]">→</span>
+          <span class="text-sm font-medium">Initial Meeting — May 1, 2024</span>
+        </a>
+        <a href="https://github.com/Jedijordie/JP-Handy/blob/main/Meeting%20Minutes/Meeting%20May%207%2C%202024" target="_blank" class="flex items-center gap-3 bg-gray-50 rounded-xl px-4 py-3 hover:border hover:border-[#2D6A4F] transition-colors duration-200">
+          <span class="text-[#2D6A4F]">→</span>
+          <span class="text-sm font-medium">Meeting — May 7, 2024</span>
+        </a>
+        <a href="https://github.com/Jedijordie/JP-Handy/blob/main/Meeting%20Minutes/Meeting%20May%2013%2C%202024" target="_blank" class="flex items-center gap-3 bg-gray-50 rounded-xl px-4 py-3 hover:border hover:border-[#2D6A4F] transition-colors duration-200">
+          <span class="text-[#2D6A4F]">→</span>
+          <span class="text-sm font-medium">Meeting — May 13, 2024</span>
+        </a>
+        <a href="https://github.com/Jedijordie/JP-Handy/blob/main/Meeting%20Minutes/Meeting%20May%2022%2C%202024" target="_blank" class="flex items-center gap-3 bg-gray-50 rounded-xl px-4 py-3 hover:border hover:border-[#2D6A4F] transition-colors duration-200">
+          <span class="text-[#2D6A4F]">→</span>
+          <span class="text-sm font-medium">Meeting — May 22, 2024</span>
+        </a>
+        <a href="https://github.com/Jedijordie/JP-Handy/blob/main/Meeting%20Minutes/Meeting%20May%2028%2C%202024" target="_blank" class="flex items-center gap-3 bg-gray-50 rounded-xl px-4 py-3 hover:border hover:border-[#2D6A4F] transition-colors duration-200">
+          <span class="text-[#2D6A4F]">→</span>
+          <span class="text-sm font-medium">Meeting — May 28, 2024</span>
+        </a>
+        <a href="https://github.com/Jedijordie/JP-Handy/blob/main/Meeting%20Minutes/Neils%20To%20Do%20List_May%201%2C%202024_1.pdf" target="_blank" class="flex items-center gap-3 bg-gray-50 rounded-xl px-4 py-3 hover:border hover:border-[#2D6A4F] transition-colors duration-200">
+          <span class="text-[#2D6A4F]">→</span>
+          <span class="text-sm font-medium">Client To-Do List</span>
+        </a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Reflection -->
-  <section class="px-12 py-16 border-b border-gray-100">
+  <section class="px-6 md:px-12 py-16 border-b border-gray-100">
     <div class="max-w-3xl">
       <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-4">Reflection</p>
       <h2 class="text-3xl font-bold mb-6">What I learned from real client work</h2>
@@ -240,13 +256,13 @@
   </section>
 
   <!-- Back to projects -->
-  <section class="px-12 py-16">
+  <section class="px-6 md:px-12 py-16">
     <p class="text-sm text-gray-400 mb-4">Back to the beginning</p>
     <a href="creativeswap.html" class="text-3xl font-bold hover:text-[#2D6A4F] transition-colors duration-200">CreativeSwap →</a>
   </section>
 
   <!-- Footer -->
-  <footer class="px-12 py-12 border-t border-gray-100 flex justify-between items-center">
+  <footer class="px-6 md:px-12 py-12 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4">
     <p class="text-sm text-gray-400">© 2026 Jordan Mattis</p>
     <div class="flex gap-8 text-sm text-gray-400">
       <a href="https://github.com/Jedijordie" target="_blank" class="hover:text-[#2D6A4F] transition-colors duration-200">GitHub</a>
