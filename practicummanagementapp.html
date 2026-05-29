@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Practicum Management App — Jordan Mattis</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+  <!-- Nav -->
+  <nav class="flex justify-between items-center px-6 md:px-12 py-8">
+    <a href="index.html" class="text-xl font-semibold tracking-tight">Jordan Mattis</a>
+    <div class="hidden md:flex gap-10 text-lg font-medium text-gray-500">
+      <a href="index.html" class="hover:text-[#2D6A4F] transition-colors duration-200">Home</a>
+      <div class="relative group">
+        <button class="hover:text-[#2D6A4F] transition-colors duration-200 flex items-center gap-1">
+          Projects
+          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          <a href="creativeswap.html" class="block px-4 py-3 text-md text-gray-600 hover:text-[#2D6A4F] hover:bg-gray-50 rounded-t-xl">CreativeSwap</a>
+          <a href="creativeswapmobile.html" class="block px-4 py-3 text-md text-gray-600 hover:text-[#2D6A4F] hover:bg-gray-50">CreativeSwap Mobile</a>
+          <a href="leafandlogic.html" class="block px-4 py-3 text-md text-gray-600 hover:text-[#2D6A4F] hover:bg-gray-50">Leaf & Logic</a>
+          <a href="jphandy.html" class="block px-4 py-3 text-md text-gray-600 hover:text-[#2D6A4F] hover:bg-gray-50">JP Handy</a>
+          <a href="studentforaday.html" class="block px-4 py-3 text-md text-gray-600 hover:text-[#2D6A4F] hover:bg-gray-50">Student for a Day</a>
+          <a href="practicumapp.html" class="block px-4 py-3 text-md text-gray-600 hover:text-[#2D6A4F] hover:bg-gray-50 rounded-b-xl text-[#2D6A4F] font-semibold">Practicum Management App</a>
+        </div>
+      </div>
+      <a href="about.html" class="hover:text-[#2D6A4F] transition-colors duration-200">About</a>
+      <a href="JordanMattis_Resume.pdf" target="_blank" class="hover:text-[#2D6A4F] transition-colors duration-200">Resume</a>
+      <a href="mailto:jordanmattis@hotmail.com" class="hover:text-[#2D6A4F] transition-colors duration-200">Contact</a>
+    </div>
+    <button id="mobile-menu-btn" class="md:hidden text-gray-500 hover:text-[#2D6A4F]">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </nav>
+  <div id="mobile-menu" class="hidden md:hidden px-6 pb-6 flex flex-col gap-4 text-sm font-medium text-gray-500 border-b border-gray-100">
+    <a href="index.html" class="hover:text-[#2D6A4F]">Home</a>
+    <a href="about.html" class="hover:text-[#2D6A4F]">About</a>
+    <a href="JordanMattis_Resume.pdf" target="_blank" class="hover:text-[#2D6A4F]">Resume</a>
+    <a href="mailto:jordanmattis@hotmail.com" class="hover:text-[#2D6A4F]">Contact</a>
+  </div>
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- Hero -->
+  <section class="px-6 md:px-20 pt-12 pb-16 border-b border-gray-100" style="background-image: url('images/background1.png'); background-size: cover; background-position: center; background-blend-mode: lighten; background-color: rgba(255,255,255,0.6);">
+    <a href="index.html#projects" class="text-sm text-[#2D6A4F] hover:underline mb-6 inline-block">← Back to Projects</a>
+    <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-4">React · Node.js · MySQL · Tailwind CSS · VIU Practicum 2025</p>
+    <h1 class="text-5xl font-bold mb-6 max-w-3xl">Practicum Management App</h1>
+    <p class="text-gray-500 text-xl max-w-2xl leading-relaxed mb-10">
+      A production-ready internal platform built for Vancouver Island University's ITAS department to manage student practicum placements, employers, and opportunities. I inherited a functional but rough application and led the UI overhaul, QA testing, and production readiness documentation — working directly with the VIU department as the client.
+    </p>
+  </section>
+
+  <!-- Project Details -->
+  <section class="px-6 md:px-12 py-16 border-b border-gray-100">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-5xl">
+      <div>
+        <p class="text-xs uppercase tracking-widest text-gray-400 mb-2">Role</p>
+        <p class="font-medium">UI Overhaul, QA & Documentation</p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-gray-400 mb-2">Context</p>
+        <p class="font-medium">Solo Practicum Placement</p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-gray-400 mb-2">Course</p>
+        <p class="font-medium">ITAS 195T — Practicum</p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-gray-400 mb-2">Client</p>
+        <p class="font-medium text-[#2D6A4F]">VIU ITAS Department</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section class="px-6 md:px-12 py-16 border-b border-gray-100">
+    <div class="max-w-3xl">
+      <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-4">The Problem</p>
+      <h2 class="text-3xl font-bold mb-6">A working app with a broken user experience</h2>
+      <p class="text-gray-600 leading-relaxed mb-4">
+        The Practicum Management App had been built by a previous team of students — the backend logic was largely in place, but the user interface was inconsistent, confusing, and not ready for real instructors to use. Forms created incomplete database records, validation errors gave no useful feedback, confirmation dialogs were basic browser alerts, and several core workflows were broken or missing entirely.
+      </p>
+      <p class="text-gray-600 leading-relaxed">
+        My job was to take this app from "it mostly works" to genuinely production ready — fixing the UI across every page, documenting every feature and bug, and communicating clearly with the department about what was done, what was outstanding, and what decisions still needed to be made.
+      </p>
+    </div>
+  </section>
+
+  <!-- My Role -->
+  <section class="px-6 md:px-12 py-16 border-b border-gray-100">
+    <div class="max-w-3xl">
+      <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-4">What I Delivered</p>
+      <h2 class="text-3xl font-bold mb-6">Five pages brought to production standard</h2>
+      <p class="text-gray-600 leading-relaxed mb-8">
+        I audited every page of the application, documented all bugs and UX issues, then rebuilt the frontend workflows one by one — replacing broken patterns with professional, consistent interactions throughout.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-gray-50 rounded-2xl p-6">
+          <h3 class="font-semibold mb-2">Students Page</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Replaced broken inline creation with a modal-based workflow. Added real-time form validation, duplicate email prevention, pagination, and professional confirmation dialogs for delete operations.</p>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-6">
+          <h3 class="font-semibold mb-2">Employers Page</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Rebuilt employer creation to stop incomplete records being saved to the database. Added cascading contact and address management, phone and postal code validation, and inline editing for all fields.</p>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-6">
+          <h3 class="font-semibold mb-2">Opportunities Page</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Replaced confusing search-based employer selection with searchable dropdowns. Added cascading logic where employer selection auto-populates contacts and addresses, plus proper date range selection.</p>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-6">
+          <h3 class="font-semibold mb-2">Placements Page</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Fixed student assignment persistence, added unassign functionality, rebuilt the matching system to prevent double-booking, and added comprehensive search across students, employers, and placement details.</p>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-6">
+          <h3 class="font-semibold mb-2">Home Dashboard</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Replaced a confusing data-heavy landing page with a clear onboarding overview designed for new instructors — feature descriptions, workflow steps, and direct navigation to each section.</p>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-6">
+          <h3 class="font-semibold mb-2">Testing & Documentation</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Produced a comprehensive production readiness document covering every user story, feature status, bug history, improvements made, outstanding items, and open questions for the client — across all user roles.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="px-6 md:px-12 py-16 border-b border-gray-100">
+    <div class="max-w-3xl">
+      <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-4">The Process</p>
+      <h2 class="text-3xl font-bold mb-6">Audit, document, fix, repeat</h2>
+      <p class="text-gray-600 leading-relaxed mb-4">
+        My process for each page was consistent: audit the existing state, document every issue with screenshots and notes, implement the fixes, then write up what was done, what improved, and what still needed decisions from the client. This gave the department a clear paper trail of where the app was and where it was going.
+      </p>
+      <p class="text-gray-600 leading-relaxed mb-4">
+        I tracked all issues through GitHub Projects using a Kanban board, which kept the backlog visible and allowed the client to see progress in real time. Meeting minutes and client emails were maintained throughout to ensure nothing was lost between sessions.
+      </p>
+      <p class="text-gray-600 leading-relaxed">
+        The final deliverable included not just working code but a full production readiness document — categorizing every feature as production ready, partially implemented, or not yet started — along with a development roadmap for whoever would pick this project up next.
+      </p>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section class="px-6 md:px-12 py-16 border-b border-gray-100">
+    <div class="max-w-3xl">
+      <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-8">Tech Stack</p>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">React.js</div>
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">Tailwind CSS</div>
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">Node.js</div>
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">MySQL / Sequelize</div>
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">REST APIs</div>
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">Custom React Hooks</div>
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">GitHub Projects</div>
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">Docker</div>
+        <div class="bg-gray-50 rounded-xl px-4 py-3 text-sm font-medium">UAT & Manual Testing</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reflection -->
+  <section class="px-6 md:px-12 py-16 border-b border-gray-100">
+    <div class="max-w-3xl">
+      <p class="text-[#2D6A4F] text-sm font-medium tracking-widest uppercase mb-4">Reflection</p>
+      <h2 class="text-3xl font-bold mb-6">What it takes to make software actually ready</h2>
+      <p class="text-gray-600 leading-relaxed mb-4">
+        This project taught me that "it works" and "it's ready" are very different things. An app can pass basic functionality tests and still fail real users completely — because the error messages are unclear, the workflows are confusing, or the data doesn't actually save correctly under certain conditions.
+      </p>
+      <p class="text-gray-600 leading-relaxed mb-4">
+        Writing the production readiness documentation was as valuable as the code changes. Categorizing every feature, being honest about what was incomplete, and framing outstanding items as clear questions for the client — that kind of communication is what separates a student project from something an institution can actually depend on.
+      </p>
+      <p class="text-gray-600 leading-relaxed">
+        Working solo on a practicum placement also meant I had to manage my own time, prioritize what to fix first, and make judgment calls without a team to consult. That independence pushed me to think more like a professional and less like a student.
+      </p>
+    </div>
+  </section>
+
+  <!-- Next Project -->
+  <section class="px-6 md:px-12 py-16">
+    <p class="text-sm text-gray-400 mb-4">Related Project</p>
+    <a href="studentforaday.html" class="text-3xl font-bold hover:text-[#2D6A4F] transition-colors duration-200">Student for a Day →</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="px-6 md:px-12 py-12 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="text-sm text-gray-400">© 2026 Jordan Mattis</p>
+    <div class="flex gap-8 text-sm text-gray-400">
+      <a href="https://github.com/Jedijordie" target="_blank" class="hover:text-[#2D6A4F] transition-colors duration-200">GitHub</a>
+      <a href="https://www.linkedin.com/in/jordie-mattis/" target="_blank" class="hover:text-[#2D6A4F] transition-colors duration-200">LinkedIn</a>
+      <a href="mailto:jordanmattis@hotmail.com" class="hover:text-[#2D6A4F] transition-colors duration-200">jordanmattis@hotmail.com</a>
+    </div>
+  </footer>
+
+</body>
+</html>
